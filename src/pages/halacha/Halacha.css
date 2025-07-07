@@ -1,0 +1,14 @@
+.halach {
+    hr {
+        border-width: 1px;
+    }
+
+    .content {
+        padding: 16px;
+    }
+
+    a {
+       color:RGB(47,109,187);
+       text-decoration: underline;
+    }
+}

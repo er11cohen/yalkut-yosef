@@ -1,0 +1,7 @@
+{
+  "name": "yalkut-yosef",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
