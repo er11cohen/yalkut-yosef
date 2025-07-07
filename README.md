@@ -1,2 +1,3 @@
 # yalkut-yosef
-Yalkut Yosef app 
+Yalkut Yosef app
+write with Ionic Capcitor React
