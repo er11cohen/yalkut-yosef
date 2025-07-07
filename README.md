@@ -1,4 +1,4 @@
 # yalkut-yosef
 Yalkut Yosef app
 <br>
-write with Ionic Capcitor React
+write with Ionic Capacitor React
