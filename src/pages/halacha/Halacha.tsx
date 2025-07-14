@@ -1,15 +1,18 @@
-import React, { useEffect, useState, useRef } from "react";
 import {
-    IonAccordion, IonAccordionGroup, IonButtons, IonContent, IonHeader, IonItem,
-    IonLabel, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar
+    IonButtons, IonContent, IonHeader,
+    IonMenuButton, IonPage,
+    IonTitle, IonToolbar
 } from '@ionic/react';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect, useRef, useState } from "react";
+import { useLocation, useHistory } from 'react-router-dom';
 
 import { SelectedChapter } from "../../models/Book";
 
 import './Halacha.css';
 
 const Halacha: React.FC = () => {
+    const history = useHistory();
+
     const location = useLocation<SelectedChapter>();
     const { bookTitle, bookSubtitleIndex } = location.state || { bookTitle: null, bookSubtitleIndex: null };
 
@@ -17,7 +20,13 @@ const Halacha: React.FC = () => {
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        fetch(`/assets/book/${bookTitle?.id}.html`)
+        const id = bookTitle?.id;
+        if (!id) {
+            history.push('/halachot-list');
+            return;
+        }
+
+        fetch(`/assets/book/${id}.html`)
             .then(response => response.arrayBuffer())
             .then(buffer => {
                 const decoder = new TextDecoder('windows-1255');
@@ -26,7 +35,7 @@ const Halacha: React.FC = () => {
                 scrollHtml();
 
             });
-    });
+    }, [bookTitle, bookSubtitleIndex]);
 
     function scrollHtml() {
         const interval = setInterval(() => {
@@ -34,7 +43,6 @@ const Halacha: React.FC = () => {
                 const bookSubtitleIndexPad = bookSubtitleIndex < 10 ?
                     '0' + bookSubtitleIndex
                     : bookSubtitleIndex.toString();
-
                 const anchor = containerRef.current.querySelector(`a[name=HtmpReportNum00${bookSubtitleIndexPad}_L2]`);
                 if (anchor) {
                     clearInterval(interval);
@@ -63,5 +71,6 @@ const Halacha: React.FC = () => {
         </IonPage>
     );
 }
+
 
 export default Halacha;

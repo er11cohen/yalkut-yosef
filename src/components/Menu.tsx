@@ -24,7 +24,7 @@ interface AppPage {
 const appPages: AppPage[] = [
   {
     title: 'רשימת ההלכות',
-    url: '/Halachot-list',
+    url: '/halachot-list',
     iosIcon: homeOutline,
     mdIcon: homeSharp
   },

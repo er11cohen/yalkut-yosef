@@ -8,21 +8,24 @@ importers:
 
   .:
     dependencies:
+      '@capacitor/android':
+        specifier: ^7.4.1
+        version: 7.4.1(@capacitor/core@7.4.1)
       '@capacitor/app':
         specifier: 7.0.1
-        version: 7.0.1(@capacitor/core@7.2.0)
+        version: 7.0.1(@capacitor/core@7.4.1)
       '@capacitor/core':
-        specifier: 7.2.0
-        version: 7.2.0
+        specifier: 7.4.1
+        version: 7.4.1
       '@capacitor/haptics':
         specifier: 7.0.1
-        version: 7.0.1(@capacitor/core@7.2.0)
+        version: 7.0.1(@capacitor/core@7.4.1)
       '@capacitor/keyboard':
         specifier: 7.0.1
-        version: 7.0.1(@capacitor/core@7.2.0)
+        version: 7.0.1(@capacitor/core@7.4.1)
       '@capacitor/status-bar':
         specifier: 7.0.1
-        version: 7.0.1(@capacitor/core@7.2.0)
+        version: 7.0.1(@capacitor/core@7.4.1)
       '@ionic/react':
         specifier: ^8.5.0
         version: 8.6.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -66,6 +69,9 @@ importers:
       '@testing-library/user-event':
         specifier: ^14.4.3
         version: 14.6.1(@testing-library/dom@10.4.0)
+      '@types/jest':
+        specifier: ^30.0.0
+        version: 30.0.0
       '@types/react':
         specifier: 19.0.10
         version: 19.0.10
@@ -621,6 +627,11 @@ packages:
     resolution: {integrity: sha512-ETyHEk2VHHvl9b9jZP5IHPavHYk57EhanlRRuae9XCpb/j5bDCbPPMOBfCWhnl/7EDJz0jEMCi/RhccCE8r1+Q==}
     engines: {node: '>=6.9.0'}
 
+  '@capacitor/android@7.4.1':
+    resolution: {integrity: sha512-/LxreKsXt6oZnS7gOpHz2WvRuZzwaLpGOKqomvBTliISTQaKEwqLkX1k665fqZquuJjP8RKnkz8thO6UZJTfbg==}
+    peerDependencies:
+      '@capacitor/core': ^7.4.0
+
   '@capacitor/app@7.0.1':
     resolution: {integrity: sha512-ArlVZAAla4MwQoKh26x2AaTDOBh5Vhp1VhMKR3RwqZSsZnazKTFGNrPbr9Ez5r1knnEDfApyjwp1uZnXK1WTYQ==}
     peerDependencies:
@@ -631,8 +642,8 @@ packages:
     engines: {node: '>=20.0.0'}
     hasBin: true
 
-  '@capacitor/core@7.2.0':
-    resolution: {integrity: sha512-2zCnA6RJeZ9ec4470o8QMZEQTWpekw9FNoqm5TLc10jeCrhvHVI8MPgxdZVc3mOdFlyieYu4AS1fNxSqbS57Pw==}
+  '@capacitor/core@7.4.1':
+    resolution: {integrity: sha512-0ap4FzPJItaeg3QiiS1WguPNHY2aD67fQ9wr7DojCRzTFuNXQPvFB6lBkqlrVeQyJ9jCw0KV/LXv25oXjDcsyA==}
 
   '@capacitor/haptics@7.0.1':
     resolution: {integrity: sha512-ewZmspE5krgDUj5ZvUDcfNZvgerAIr+3bDSk6DLzyvBZ/dYmr/tMLu5H6WtYaaKYZJ32aZAudGpIal5epDyBYA==}
@@ -4167,9 +4178,13 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.27.1
 
-  '@capacitor/app@7.0.1(@capacitor/core@7.2.0)':
+  '@capacitor/android@7.4.1(@capacitor/core@7.4.1)':
     dependencies:
-      '@capacitor/core': 7.2.0
+      '@capacitor/core': 7.4.1
+
+  '@capacitor/app@7.0.1(@capacitor/core@7.4.1)':
+    dependencies:
+      '@capacitor/core': 7.4.1
 
   '@capacitor/cli@7.2.0':
     dependencies:
@@ -4193,21 +4208,21 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@capacitor/core@7.2.0':
+  '@capacitor/core@7.4.1':
     dependencies:
       tslib: 2.8.1
 
-  '@capacitor/haptics@7.0.1(@capacitor/core@7.2.0)':
+  '@capacitor/haptics@7.0.1(@capacitor/core@7.4.1)':
     dependencies:
-      '@capacitor/core': 7.2.0
+      '@capacitor/core': 7.4.1
 
-  '@capacitor/keyboard@7.0.1(@capacitor/core@7.2.0)':
+  '@capacitor/keyboard@7.0.1(@capacitor/core@7.4.1)':
     dependencies:
-      '@capacitor/core': 7.2.0
+      '@capacitor/core': 7.4.1
 
-  '@capacitor/status-bar@7.0.1(@capacitor/core@7.2.0)':
+  '@capacitor/status-bar@7.0.1(@capacitor/core@7.4.1)':
     dependencies:
-      '@capacitor/core': 7.2.0
+      '@capacitor/core': 7.4.1
 
   '@colors/colors@1.5.0':
     optional: true

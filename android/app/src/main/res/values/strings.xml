@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">yalkut-yosef</string>
+    <string name="title_activity_main">Yalkut Yosef - Kitzur</string>
+    <string name="package_name">com.eran.yalkutyosef</string>
+    <string name="custom_url_scheme">com.eran.yalkutyosef</string>
+</resources>

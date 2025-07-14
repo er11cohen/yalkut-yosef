@@ -2,8 +2,11 @@ import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.eran.yalkutyosef',
-  appName: 'yalkut-yosef',
-  webDir: 'dist'
+  appName: 'Yalkut Yosef',
+  webDir: 'dist',
+  android: {
+    adjustMarginsForEdgeToEdge: 'auto',
+  }
 };
 
 export default config;

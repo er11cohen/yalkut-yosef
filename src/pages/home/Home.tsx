@@ -8,7 +8,6 @@ import { bookTitles } from '../../data/bookStructure';
 import { SelectedChapter } from "../../models/Book";
 
 const Home: React.FC = () => {
-    //   const { name } = useParams<{ name: string; }>();
     const history = useHistory();
 
     const selectSubOption = (selectedChapter: SelectedChapter) => {
@@ -48,39 +47,7 @@ const Home: React.FC = () => {
                         ))
 
                     }
-
-                    {/* <IonAccordionGroup>
-                    <IonAccordion value="first">
-                        <IonItem slot="header">
-                            <IonLabel>אפשרות 1</IonLabel>
-                        </IonItem>
-                        <div className="ion-padding" slot="content">
-                            <IonList>
-                                <IonItem button onClick={() => selectSubOption('תת אפשרות 1-1')}>
-                                    <IonLabel>תת אפשרות 1-1</IonLabel>
-                                </IonItem>
-                                <IonItem button onClick={() => selectSubOption('תת אפשרות 1-2')}>
-                                    <IonLabel>תת אפשרות 1-2</IonLabel>
-                                </IonItem>
-                            </IonList>
-                        </div>
-                    </IonAccordion> */}
-
-                    {/* <IonAccordion value="second">
-                        <IonItem slot="header">
-                            <IonLabel>אפשרות 2</IonLabel>
-                        </IonItem>
-                        <div className="ion-padding" slot="content">
-                            <IonList>
-                                <IonItem button onClick={() => selectSubOption('תת אפשרות 2-1')}>
-                                    <IonLabel>תת אפשרות 2-1</IonLabel>
-                                </IonItem>
-                                <IonItem button onClick={() => selectSubOption('תת אפשרות 2-2')}>
-                                    <IonLabel>תת אפשרות 2-2</IonLabel>
-                                </IonItem>
-                            </IonList>
-                        </div>
-                    </IonAccordion> */}
+                   
                 </IonAccordionGroup>
             </IonContent >
         </IonPage >

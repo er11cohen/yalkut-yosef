@@ -36,7 +36,6 @@ import '@ionic/react/css/palettes/dark.system.css';
 /* Theme variables */
 import './theme/variables.css';
 import Halacha from './pages/halacha/Halacha';
-import { bookTitles } from './data/bookStructure';
 
 setupIonicReact();
 
