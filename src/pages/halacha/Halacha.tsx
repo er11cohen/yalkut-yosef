@@ -6,7 +6,7 @@ import {
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation, useHistory } from 'react-router-dom';
 
-import { SelectedChapter } from "../../models/Book";
+import { SelectedChapter } from "../../shared/models/Book";
 
 import './Halacha.css';
 

@@ -4,8 +4,8 @@ import {
 } from '@ionic/react';
 import { useHistory } from 'react-router-dom';
 
-import { bookTitles } from '../../data/bookStructure';
-import { SelectedChapter } from "../../models/Book";
+import { bookTitles } from '../../shared/data/bookStructure';
+import { SelectedChapter } from "../../shared/models/Book";
 
 const Home: React.FC = () => {
     const history = useHistory();
