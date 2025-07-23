@@ -1,9 +1,9 @@
-import {IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle} from '@ionic/react';
+import { IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle } from '@ionic/react';
 
-import {useHistory, useLocation} from 'react-router-dom';
-import {homeOutline, homeSharp} from 'ionicons/icons';
+import { useHistory, useLocation } from 'react-router-dom';
+import { homeOutline, homeSharp } from 'ionicons/icons';
 import './Menu.css';
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 interface AppPage {
     url: string;
@@ -30,7 +30,7 @@ const appPages: AppPage[] = [
 
 
 const Menu: React.FC = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
 
     const location = useLocation();
     const history = useHistory();
@@ -53,7 +53,8 @@ const Menu: React.FC = () => {
                                          }}
                                          lines="none"
                                          detail={false}>
-                                    <IonIcon aria-hidden="true" slot="start" ios={appPage.iosIcon} md={appPage.mdIcon}/>
+                                    <IonIcon aria-hidden="true" slot="start" ios={appPage.iosIcon}
+                                             md={appPage.mdIcon}/>
                                     <IonLabel>{appPage.title}</IonLabel>
                                 </IonItem>
                             </IonMenuToggle>
